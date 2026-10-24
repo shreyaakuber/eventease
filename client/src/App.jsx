@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+   const API = "https://eventease-api-8k07.onrender.com/api";
 
 async function call(path, options) {
   const res = await fetch(`${API}${path}`, {
